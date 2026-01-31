@@ -1,0 +1,14 @@
+footer{
+    background-color: #1A252F;
+    padding: 30px;
+    >p{
+        color: #fff;
+        text-align: center;
+        letter-spacing: 5px;
+         >span{
+        color: red;
+        letter-spacing: 10px;
+
+    }
+    }
+}
