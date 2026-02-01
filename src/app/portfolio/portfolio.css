@@ -1,0 +1,11 @@
+.imgs_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 70px 50px;
+    >div{
+        width: 30%;
+    }
+}

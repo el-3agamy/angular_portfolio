@@ -1,0 +1,46 @@
+main{
+
+ padding: 50px 0;
+ background-color: #1ABC9C;
+ text-align: center;
+ >:last-child{
+    background-color: #fff;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+    >div{
+        flex: 1;
+        background-color:#2C3E50;
+        color: #fff;
+        
+    }
+    :nth-child(2)>div{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        >span{
+            padding: 12px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 1s;
+            &:hover{
+                color: #000;
+                background-color: #fff;
+            }
+        }
+    }
+ }
+    
+}
+.img_container{
+
+    width: 20%;
+    margin:  auto;
+    
+}
