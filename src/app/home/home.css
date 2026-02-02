@@ -1,23 +1,23 @@
 main{
-
- padding: 50px 0;
- background-color: #1ABC9C;
- text-align: center;
+    background-color: #1ABC9C;
+    text-align: center;
+    >#banner{
+        height: calc(100vh - 80px);
+        padding-top: 100px;
+    }
  >:last-child{
-    background-color: #fff;
-    padding: 50px 0;
+    background-color:#2C3E50;
+    padding: 120px ;
     display: flex;
     justify-content: center;
     align-items: start;
-    gap: 50px;
+    /* gap: 50px; */
     >div{
         flex: 1;
-        background-color:#2C3E50;
         color: #fff;
         
     }
     :nth-child(2)>div{
-
         display: flex;
         justify-content: center;
         align-items: center;
