@@ -9,3 +9,12 @@
         width: 30%;
     }
 }
+
+@media(max-width : 768px){
+    .imgs_container{
+        flex-direction: column;
+        >div{
+            width: 100%;
+        }
+    }
+}
