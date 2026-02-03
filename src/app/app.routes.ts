@@ -3,6 +3,7 @@ import {Home} from "./home/home"
 import {About} from './about/about'
 import { Portfolio } from './portfolio/portfolio';
 import { Contact } from './contact/contact';
+import { NotFound } from './not-found/not-found';
 
 export const routes: Routes = [
     {
@@ -29,5 +30,9 @@ export const routes: Routes = [
     {
         path : "portfolio" ,
         component : Portfolio
+    } ,
+    {
+        path : "**" ,
+        component : NotFound
     }
 ];
