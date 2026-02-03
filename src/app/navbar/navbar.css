@@ -25,3 +25,12 @@ nav{
     }
 
 }
+
+.active{
+    color: #fff !important;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #0000003c;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
