@@ -4,6 +4,7 @@ import {About} from './about/about'
 import { Portfolio } from './portfolio/portfolio';
 import { Contact } from './contact/contact';
 import { NotFound } from './not-found/not-found';
+import { ProjectDetails } from './project-details/project-details';
 
 export const routes: Routes = [
     {
@@ -30,6 +31,10 @@ export const routes: Routes = [
     {
         path : "portfolio" ,
         component : Portfolio
+    } ,
+    {
+        path :"portfolio/:id" ,
+        component : ProjectDetails 
     } ,
     {
         path : "**" ,
