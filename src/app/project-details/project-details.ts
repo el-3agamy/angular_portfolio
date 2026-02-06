@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Projectserve } from '../services/projectserve';
 
 @Component({
   selector: 'app-project-details',
@@ -9,6 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProjectDetails {
 activeRout = inject(ActivatedRoute) ;
+userServe =inject(Projectserve)
 projectID =0 ;
 data = this.activeRout.params.subscribe(param=>{
   this.projectID = param['id']

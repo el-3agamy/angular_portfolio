@@ -8,36 +8,43 @@ import { ProjectDetails } from './project-details/project-details';
 
 export const routes: Routes = [
     {
-        path :"home" ,
-        redirectTo : "" ,
-        pathMatch : "full"
-    }
-    ,
-
-    {
         path : "" ,
-        component : Home 
+        redirectTo : "home" ,
+        pathMatch : "full" , 
+       
 
     } ,
     {
+        path :"home" ,
+        component : Home ,
+        title : "Home"
+    }
+    ,
+    
+    {
         path : "about" ,
-        component : About
+        component : About ,
+        title : "About"
 
     } ,
     {
         path : "contact" ,
-        component : Contact
+        component : Contact ,
+        title: "Contacts"
     } ,
     {
         path : "portfolio" ,
-        component : Portfolio
+        component : Portfolio ,
+        title : "Portfolio"
     } ,
     {
         path :"portfolio/:id" ,
-        component : ProjectDetails 
+        component : ProjectDetails ,
+        title : "portfolio/:id"
     } ,
     {
         path : "**" ,
-        component : NotFound
+        component : NotFound ,
+        title : "Not found"
     }
 ];
